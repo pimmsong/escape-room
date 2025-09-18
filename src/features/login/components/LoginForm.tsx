@@ -31,7 +31,7 @@ export default function LoginForm() {
 
   return (
     <section className="max-w-[375px] w-full ">
-      <h2 className="roboto-mono text-6xl font-bold text-center">Login</h2>
+      <h2 className="text-6xl font-bold text-center">Login</h2>
       <div className="mt-[50px]">
         <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
           <input
@@ -39,14 +39,14 @@ export default function LoginForm() {
             value={id}
             placeholder="id_name"
             onChange={(e) => setId(e.target.value)}
-            className="p-3 rounded-[10px] border-2 h-14 bg-white border-black placeholder:text-xl roboto-mono focus:outline-primary"
+            className="p-3 rounded-[10px] border-2 h-14 bg-white border-black placeholder:text-xl  focus:outline-primary"
           />
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
-            className="p-3 rounded-[10px] border-2 h-14 bg-white border-black placeholder:text-xl roboto-mono focus:outline-primary"
+            className="p-3 rounded-[10px] border-2 h-14 bg-white border-black placeholder:text-xl focus:outline-primary"
           />
           <Button
             label="Enter"

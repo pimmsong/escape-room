@@ -23,7 +23,7 @@ export default function Loading() {
           />
         ))}
       </ul>
-      <p className="mt-2 roboto-mono font-bold text-3xl">Loading..</p>
+      <p className="mt-2  font-bold text-3xl">Loading..</p>
     </div>
   );
 }
