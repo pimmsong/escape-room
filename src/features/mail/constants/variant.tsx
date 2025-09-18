@@ -9,6 +9,7 @@ export const MAILLIST_VARIANTS: Record<
   Variant,
   {
     bg: string;
+    text: string;
     contentBg: string;
     startIcon: React.ReactNode;
     logoIcon: React.ReactNode;
@@ -16,12 +17,14 @@ export const MAILLIST_VARIANTS: Record<
 > = {
   orange: {
     bg: "bg-primary",
+    text: "text-primary",
     contentBg: "bg-secondary",
     startIcon: <StarOrangeIcon />,
     logoIcon: <LogoOrangeIcon />,
   },
   blue: {
     bg: "bg-blue-primary",
+    text: "text-blue-primary",
     contentBg: "bg-blue-secondary",
     startIcon: <StarBlueIcon />,
     logoIcon: <LogoBlueIcon />,

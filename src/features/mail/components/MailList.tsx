@@ -1,8 +1,15 @@
-import { useScrollbar } from "../hooks/useScrollbar";
-import MailListItem from "./MailListItem";
-import Scrollbar from "./ScrollBar";
+import { useScrollbar } from "@features/mail/hooks/useScrollbar";
+import MailListItem from "@features/mail/components/MailListItem";
+import Scrollbar from "@features/mail/components/ScrollBar";
+import type { Variant } from "@features/mail/constants/variant";
+import type { Mail } from "@features/mail//type";
 
-export default function MailList() {
+interface MailListProps {
+  variant: Variant;
+  mails: Mail[];
+}
+
+export default function MailList({ variant, mails }: MailListProps) {
   const { listRef, trackRef, thumbTop, thumbHeight, scrollBy, onMouseDown } =
     useScrollbar();
 
@@ -12,8 +19,8 @@ export default function MailList() {
         ref={listRef}
         className="flex flex-col flex-1 overflow-y-auto scrollbar-hide"
       >
-        {Array.from({ length: 5 }, (_, i) => (
-          <MailListItem key={i} />
+        {mails.map((mail, i) => (
+          <MailListItem key={i} variant={variant} mail={mail} />
         ))}
       </ul>
 
@@ -24,6 +31,7 @@ export default function MailList() {
         onThumbMouseDown={onMouseDown}
         onScrollUp={() => scrollBy(-100)}
         onScrollDown={() => scrollBy(100)}
+        variant={variant}
       />
     </div>
   );

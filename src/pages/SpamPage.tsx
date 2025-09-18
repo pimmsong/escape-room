@@ -1,12 +1,12 @@
 import MailContainer from "@features/mail/components/MailContainer";
-import { inboxMails } from "@features/mail/data/inbox";
+import { spamMails } from "@features/mail/data/spam";
 
-export default function InboxPage() {
+export default function SpamPage() {
   return (
     <div className="relative h-screen">
       <div className="fixed inset-0 bg-grid -z-10" />
       <div className="grid place-items-center min-h-screen">
-        <MailContainer mails={inboxMails} />
+        <MailContainer variant="blue" mails={spamMails} />
       </div>
     </div>
   );

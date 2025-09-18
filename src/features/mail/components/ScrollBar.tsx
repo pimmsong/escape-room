@@ -1,4 +1,6 @@
 import ArrowIcon from "@assets/icons/icon_arrow_triangle.svg?react";
+import { MAILLIST_VARIANTS as VARIANTS } from "../constants/variant";
+import type { Variant } from "../constants/variant";
 
 interface ScrollbarProps {
   trackRef: React.RefObject<HTMLDivElement | null>;
@@ -7,6 +9,7 @@ interface ScrollbarProps {
   onThumbMouseDown: (e: React.MouseEvent) => void;
   onScrollUp: () => void;
   onScrollDown: () => void;
+  variant: Variant;
 }
 
 export default function Scrollbar({
@@ -16,6 +19,7 @@ export default function Scrollbar({
   onThumbMouseDown,
   onScrollUp,
   onScrollDown,
+  variant,
 }: ScrollbarProps) {
   return (
     <div className="w-[46px] h-full border-l-2 bg-white flex flex-col">
@@ -36,7 +40,9 @@ export default function Scrollbar({
           }}
           onMouseDown={onThumbMouseDown}
         >
-          <div className="w-full h-full bg-primary border-t-2 border-b-2"></div>
+          <div
+            className={`w-full h-full ${VARIANTS[variant].bg} border-t-2 border-b-2`}
+          ></div>
         </div>
       </div>
 
