@@ -1,0 +1,22 @@
+<svg
+  width="24"
+  height="20"
+  viewBox="0 0 24 20"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    x="1.65405"
+    y="1.42529"
+    width="20.1814"
+    height="17.0729"
+    stroke="currentColor"   
+    stroke-width="2"
+  />
+  <path
+    d="M1.86719 1.78296L11.7486 10.6832L21.6299 1.78296"
+    stroke="currentColor"  
+    stroke-width="2"
+    stroke-linecap="square"
+  />
+</svg>

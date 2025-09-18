@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "@pages/LoginPage";
-import MailListPage from "@pages/MailListPage";
+import InboxPage from "@pages/InboxPage";
+import SpamPage from "@pages/SpamPage";
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/mail" element={<MailListPage />} />
+          <Route path="/inbox" element={<InboxPage />} />
+          <Route path="/spam" element={<SpamPage />} />
         </Routes>
       </BrowserRouter>
     </>

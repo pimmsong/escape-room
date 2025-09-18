@@ -72,32 +72,50 @@
   font-display: swap;
 }
 
-:root {
-  font-family: "Pretendard", "Roboto Mono", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: #191919;
-  background-color: #fff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.roboto-mono {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
 @theme {
   --color-primary: #eb780a;
   --color-secondary: #f2ceae;
 
+  --color-blue-primary: #4282c0;
+  --color-blue-secondary: #b8dcd8;
+
+  --color-brown: #796757;
+
   --color-black: #191919;
+  --color-gray: #796757;
+}
+
+@layer base {
+  :root {
+    font-family: "Roboto Mono", "Pretendard", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: #191919;
+    background-color: #fff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .pretendard {
+    font-family: "Pretendard", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 }
 
 @layer utilities {
@@ -108,6 +126,19 @@
   }
 
   .window {
-    box-shadow: 6px 6px 0px #000;
+    box-shadow: 6px 6px 0px #191919;
+  }
+
+  .window-lg {
+    box-shadow: 10px 10px 0px #191919;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
