@@ -2,7 +2,7 @@ import { useScrollbar } from "@features/mail/hooks/useScrollbar";
 import MailListItem from "@features/mail/components/MailListItem";
 import Scrollbar from "@features/mail/components/ScrollBar";
 import type { Variant } from "@features/mail/constants/variant";
-import type { Mail } from "@features/mail//type";
+import type { Mail } from "@features/mail/type";
 
 interface MailListProps {
   variant: Variant;

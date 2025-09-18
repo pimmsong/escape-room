@@ -4,7 +4,7 @@ import { MAILLIST_VARIANTS as VARIANTS } from "@features/mail/constants/variant"
 import type { Variant } from "@features/mail/constants/variant";
 import BrowserBackground from "@assets/images/browser_bg.svg?react";
 import MailTab from "@features/mail/components/MailTab";
-import type { Mail } from "@features/mail//type";
+import type { Mail } from "@features/mail/type";
 
 interface MailContainerProps {
   variant?: Variant;

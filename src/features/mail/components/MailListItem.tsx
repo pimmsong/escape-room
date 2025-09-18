@@ -1,6 +1,6 @@
 import Checkbox from "@shared/ui/Checkbox";
 import type { Variant } from "../constants/variant";
-import type { Mail } from "@features/mail//type";
+import type { Mail } from "@features/mail/type";
 
 interface MailListItemProps {
   variant: Variant;
