@@ -12,7 +12,7 @@ export default function MailContainer({
   variant = "orange",
 }: MailContainerProps) {
   return (
-    <div className={`relative w-[80%] max-w-[1024px] h-[80%] mx-auto mt-10 `}>
+    <div className={`relative w-[80%] max-w-[1024px] h-[80%] mx-auto mt-10`}>
       <div
         className={`relative top-[4px] z-2 flex items-center gap-2 py-2.5 px-6 w-[350px] ${VARIANTS[variant].bg}`}
       >
@@ -20,7 +20,7 @@ export default function MailContainer({
         <h3 className="font-bold text-[23px]">LOTTECAST_EMAIL</h3>
       </div>
       <div
-        className={`overflow-hidden window-lg border-[4px] rounded-b-[10px] rounded-r-[10px] ${VARIANTS[variant].bg} pb-10`}
+        className={`overflow-hidden window-lg border-[4px] rounded-b-[10px] rounded-r-[10px] ${VARIANTS[variant].bg}`}
       >
         {/* 주소창  */}
         <div className="flex items-center gap-4 py-2.5 px-4 border-b-[4px]">
@@ -41,9 +41,8 @@ export default function MailContainer({
           <MailMenu />
           <MailList />
         </div>
+        <div className="h-10 border-t-4" />
       </div>
-
-      {/* 주소창 */}
     </div>
   );
 }
