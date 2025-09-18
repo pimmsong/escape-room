@@ -2,7 +2,7 @@ import Checkbox from "@shared/ui/Checkbox";
 
 export default function MailListItem() {
   return (
-    <li className="flex items-center px-5 py-3 border-b-2 last:border-b-0 justify-between">
+    <li className="flex items-center px-5 py-3 border-b-2 justify-between">
       <div className="flex items-center">
         <div className="relative inline-block top-0.5">
           <Checkbox id="custom-check" />

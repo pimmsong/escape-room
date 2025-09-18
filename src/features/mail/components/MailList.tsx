@@ -10,9 +10,9 @@ export default function MailList() {
     <div className="relative flex flex-1">
       <ul
         ref={listRef}
-        className="flex flex-col flex-1 max-h-[550px] overflow-y-auto scrollbar-hide"
+        className="flex flex-col flex-1 overflow-y-auto scrollbar-hide"
       >
-        {Array.from({ length: 20 }, (_, i) => (
+        {Array.from({ length: 5 }, (_, i) => (
           <MailListItem key={i} />
         ))}
       </ul>

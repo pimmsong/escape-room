@@ -1,0 +1,25 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 940 110"
+  preserveAspectRatio="none"
+  className="w-full h-[110px]"
+>
+  <path
+    d="
+      M940 70
+      V110
+      H0
+      V50
+      L15 15
+      C17 7 22 0 30 0
+      H325
+      C333 0 338 7 340 15
+      L352 50
+      H940
+      Z
+    "
+    fill="#EB780A"
+    stroke="black"
+    strokeWidth="4"
+  />
+</svg>
