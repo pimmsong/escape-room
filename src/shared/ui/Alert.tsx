@@ -23,7 +23,7 @@ export default function Alert({
     <div className="overflow-hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[10px] w-[442px] z-10 border-[4px] window bg-amber-500">
       <div className="flex items-center justify-between py-2.5 px-5 bg-primary">
         <h2 className="text-3xl font-bold ">{title}</h2>
-        <button className="text-white cursor-pointer" onClick={onClose}>
+        <button className="text-white" onClick={onClose}>
           <CloseIcon />
         </button>
       </div>

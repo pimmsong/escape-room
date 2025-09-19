@@ -24,7 +24,7 @@ export default function MailListItem({
             ...mail,
           })
         }
-        className="flex items-center justify-between w-full cursor-pointer"
+        className="flex items-center justify-between w-full"
       >
         <div className="flex items-center">
           <div className="relative inline-block top-0.5">
