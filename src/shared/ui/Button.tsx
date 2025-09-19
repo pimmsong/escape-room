@@ -12,7 +12,7 @@ export default function Button({
   return (
     <button
       type="submit"
-      className={`mx-auto bg-white w-[213px] h-[55px] transition window rounded-[10px] text-[34px] font-bold border-[2px] cursor-pointer disabled:cursor-not-allowed ${className}`}
+      className={`mx-auto bg-white w-[213px] h-[55px] transition window rounded-[10px] text-[34px] font-bold border-[2px] disabled:cursor-not-allowed ${className}`}
       {...props}
     >
       {label}

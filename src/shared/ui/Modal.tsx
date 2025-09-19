@@ -29,12 +29,7 @@ export default function Modal({
         }`}
       >
         <h2 className="font-bold text-2xl">{title}</h2>
-        <button
-          type="button"
-          className="cursor-pointer"
-          aria-label="Close Modal"
-          onClick={onClose}
-        >
+        <button type="button" aria-label="Close Modal" onClick={onClose}>
           <CloseIcon />
         </button>
       </div>
