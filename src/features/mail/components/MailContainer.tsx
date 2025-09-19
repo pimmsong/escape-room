@@ -16,7 +16,7 @@ export default function MailContainer({
   mails,
 }: MailContainerProps) {
   return (
-    <div className="relative w-[960px] h-[80vh] mx-auto mt-10 box-border">
+    <div className="relative w-[960px] aspect-[13/9] mx-auto box-border">
       <BrowserBackground className="absolute inset-0 translate-x-2 translate-y-3 w-full h-full z-0 " />
 
       <div className="relative z-10 flex flex-col h-full">
