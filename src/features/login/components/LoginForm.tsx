@@ -2,8 +2,10 @@ import { useState } from "react";
 import Alert from "@shared/ui/Alert";
 import Button from "@shared/ui/Button";
 import Loading from "@shared/ui/Loading";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
+  const navigate = useNavigate();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [isOpenError, setIsOpenError] = useState(false);
@@ -17,12 +19,11 @@ export default function LoginForm() {
       return;
     }
 
-    if (id === "escape" && password === "room") {
+    if (id === "lottecast" && password === "hello") {
       setIsOpenLoading(true);
 
       setTimeout(() => {
-        // TODO: redirect to /mail
-        setIsOpenLoading(false);
+        navigate("/inbox");
       }, 1500);
     } else {
       setIsOpenError(true);
