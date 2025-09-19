@@ -28,7 +28,7 @@ export default function MailListItem({
       >
         <div className="flex items-center">
           <div className="relative inline-block top-0.5">
-            <Checkbox id="custom-check" variant={variant} />
+            <Checkbox id={`${mail.sender}-${mail.subject}`} variant={variant} />
           </div>
           <span className="w-[80px] ml-5 text-[21px] text-left">
             {mail.sender}
