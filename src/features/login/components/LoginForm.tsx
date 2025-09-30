@@ -19,7 +19,7 @@ export default function LoginForm() {
       return;
     }
 
-    if (id === "lottecast" && password === "hello") {
+    if (id === "leehyun1941" && password === "whtjsakftkfwjdcor") {
       setIsOpenLoading(true);
 
       setTimeout(() => {
@@ -38,7 +38,7 @@ export default function LoginForm() {
           <input
             type="text"
             value={id}
-            placeholder="id_name"
+            placeholder="cast"
             onChange={(e) => setId(e.target.value)}
             className="p-3 rounded-[10px] border-2 h-14 bg-white border-black placeholder:text-xl  focus:outline-primary"
           />
@@ -46,7 +46,7 @@ export default function LoginForm() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
+            placeholder="오구라컬렉션"
             className="p-3 rounded-[10px] border-2 h-14 bg-white border-black placeholder:text-xl focus:outline-primary"
           />
           <Button
