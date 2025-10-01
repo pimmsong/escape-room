@@ -19,7 +19,10 @@ export default function LoginForm() {
       return;
     }
 
-    if (id === "leehyun1941" && password === "whtjsakftkfwjdcor") {
+    if (
+      id === "leehyun1941" &&
+      (password === "whtjsakftkfrPghlr" || password === "조선말살계획")
+    ) {
       setIsOpenLoading(true);
 
       setTimeout(() => {
