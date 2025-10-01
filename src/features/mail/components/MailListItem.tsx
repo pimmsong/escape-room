@@ -30,18 +30,20 @@ export default function MailListItem({
           <div className="relative inline-block top-0.5">
             <Checkbox id={`${mail.sender}-${mail.subject}`} variant={variant} />
           </div>
-          <span className="w-[80px] ml-5 text-[21px] text-left">
+          <span className="w-[80px] ml-5 text-[20px] text-left">
             {mail.sender}
           </span>
           <h4
-            className="ml-10 text-[21px] pretendard 
+            className="ml-10 text-[20px] pretendard 
                max-w-[400px] text-left
                whitespace-nowrap overflow-hidden text-ellipsis"
           >
             {mail.subject}
           </h4>
         </div>
-        <span className="pretendard text-brown">{mail.date}</span>
+        <span className="pretendard text-brown whitespace-nowrap ml-2">
+          {mail.date}
+        </span>
       </button>
     </li>
   );

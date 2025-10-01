@@ -71,7 +71,7 @@ export default function MailList({ variant, mails }: MailListProps) {
               <img
                 src={image}
                 alt={`${subject} 이미지`}
-                className="w-full h-full cover"
+                className="w-full h-full object-contain"
               />
             </div>
           )}
